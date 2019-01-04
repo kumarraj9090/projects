@@ -1,0 +1,31 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+class mak
+{
+
+   
+
+    public static void main(String[] args) throws IOException {
+int n;
+Scanner scan=new Scanner(System.in);
+n=scan.nextInt();
+int s=factorial(n);
+System.out.println(s);
+    }
+public static int factorial(int n)
+{
+    if(n==0)
+    {
+        return 1;
+    }
+    else{
+        return (n*factorial(n-1));
+    }
+}
+
+}
